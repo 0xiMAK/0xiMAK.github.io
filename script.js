@@ -47,4 +47,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 return "Unknown command. Type 'help' for available commands.";
         }
     }
+
+    // Matrix Falling Code Effect
+    const matrixContainer = document.createElement("div");
+    matrixContainer.classList.add("matrix-background");
+    document.body.appendChild(matrixContainer);
+
+    function createMatrixEffect() {
+        const matrixText = document.createElement("div");
+        matrixText.classList.add("matrix-text");
+        matrixText.innerText = Math.random() > 0.5 ? "0" : "1"; // Random binary characters
+        matrixText.style.left = Math.random() * window.innerWidth + "px";
+        matrixText.style.animationDuration = Math.random() * 3 + 2 + "s"; // Random speed
+        matrixContainer.appendChild(matrixText);
+
+        // Remove element after animation completes
+        setTimeout(() => {
+            matrixText.remove();
+        }, 5000);
+    }
+
+    // Create multiple falling characters
+    setInterval(createMatrixEffect, 100);
 });
