@@ -1,8 +1,17 @@
+/* General Page Styling */
 body {
     background-color: black;
     color: #33ff33;
     font-family: 'Courier New', monospace;
     padding: 20px;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
 }
 
 nav ul {
@@ -12,7 +21,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -21,27 +30,34 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    text-shadow: 0 0 10px #33ff33;
+}
+
+/* Page Container */
 #terminal {
     width: 80%;
     margin: auto;
     border: 2px solid #33ff33;
-    padding: 10px;
-    min-height: 200px;
-    box-shadow: 0 0 10px #33ff33;
+    padding: 20px;
+    min-height: 400px;
+    box-shadow: 0 0 15px #33ff33;
 }
 
-.green-text {
+/* Headings */
+h1, h2, h3 {
     color: #33ff33;
 }
 
+/* Table of Contents */
 .toc-section {
     margin: 20px 0;
 }
 
 .toc-btn {
-    background-color: #333;
+    background-color: #222;
     color: #33ff33;
-    border: none;
+    border: 1px solid #33ff33;
     padding: 10px;
     width: 100%;
     text-align: left;
@@ -50,7 +66,7 @@ nav ul li a {
 }
 
 .toc-btn:hover {
-    text-decoration: underline;
+    text-shadow: 0 0 5px #33ff33;
 }
 
 .toc-content {
@@ -74,4 +90,13 @@ nav ul li a {
 
 .toc-content a:hover {
     text-shadow: 0 0 5px #33ff33;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #33ff33;
+    color: #33ff33;
 }
