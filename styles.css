@@ -4,23 +4,31 @@ body {
     color: #33ff33;
     font-family: 'Courier New', monospace;
     padding: 20px;
+    text-align: center; /* Centering all content */
 }
 
 /* Navigation Bar */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    display: inline-block; /* Ensures the nav links stay centered */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #33ff33;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 /* Page Container */
@@ -31,6 +39,7 @@ nav ul li a {
     padding: 10px;
     min-height: 200px;
     box-shadow: 0 0 10px #33ff33;
+    text-align: left; /* Keeps text inside terminal aligned properly */
 }
 
 /* Headings */
@@ -45,6 +54,7 @@ h1, h2, h3 {
 /* TOC Section */
 .toc-section {
     margin: 20px 0;
+    text-align: left;
 }
 
 /* TOC Button */
