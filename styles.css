@@ -1,9 +1,5 @@
 /* General Page Styling */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+body {
     background-color: black;
     color: #33ff33;
     font-family: 'Courier New', monospace;
@@ -14,6 +10,7 @@ html, body {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -29,13 +26,15 @@ nav ul li a {
 
 /* Page Container */
 #terminal {
-    flex: 1;
-    width: 80%;
+    width: 90%;
     margin: auto;
     border: 2px solid #33ff33;
     padding: 10px;
-    min-height: 200px;
+    min-height: 300px;
     box-shadow: 0 0 10px #33ff33;
+    max-width: 1000px;
+    font-size: 1.2em;
+    overflow-y: auto;
 }
 
 /* Headings */
@@ -54,26 +53,39 @@ h1, h2, h3 {
 
 /* TOC Button */
 .toc-btn {
-    background-color: #333;
+    background-color: #222;
     color: #33ff33;
-    border: none;
+    border: 2px solid #33ff33;
     padding: 10px;
     width: 100%;
     text-align: left;
     cursor: pointer;
     font-size: 1.2em;
+    transition: background 0.3s;
 }
 
 .toc-btn:hover {
-    text-decoration: underline;
+    background-color: #33ff33;
+    color: black;
+    text-shadow: 0 0 8px #00ff00;
 }
 
-/* TOC Content */
+/* TOC Content - Smooth Dropdown */
 .toc-content {
     display: none;
-    margin-top: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    margin-top: 5px;
+    padding-left: 15px;
 }
 
+.toc-content.active {
+    display: block;
+    max-height: 500px; /* Adjust as needed */
+}
+
+/* TOC Links */
 .toc-content ul {
     list-style: none;
     padding: 0;
@@ -92,13 +104,11 @@ h1, h2, h3 {
     text-shadow: 0 0 5px #33ff33;
 }
 
-/* Footer - Always at the Bottom */
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    margin-top: auto;
+    margin-top: 20px;
     border-top: 1px solid #33ff33;
     color: #33ff33;
-    width: 100%;
-    background-color: black;
 }
