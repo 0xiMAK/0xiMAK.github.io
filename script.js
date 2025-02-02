@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function toggleTOC(sectionId) {
         let section = document.getElementById(sectionId);
         if (section) {
-            // Check computed style for reliable detection
             if (getComputedStyle(section).display === "none") {
                 section.style.display = "block";
             } else {
