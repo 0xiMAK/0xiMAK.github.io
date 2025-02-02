@@ -17,11 +17,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Function to toggle visibility of TOC sections with animation
+    // Function to toggle visibility of TOC sections
     function toggleTOC(sectionId) {
         let section = document.getElementById(sectionId);
         if (section) {
-            section.classList.toggle("active");
+            // Check computed style for reliable detection
+            if (getComputedStyle(section).display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
         } else {
             console.error("Section with ID " + sectionId + " not found.");
         }
