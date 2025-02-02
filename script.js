@@ -1,5 +1,3 @@
-working js
-
 document.addEventListener("DOMContentLoaded", function() {
     const input = document.getElementById("input");
     const terminal = document.getElementById("terminal");
