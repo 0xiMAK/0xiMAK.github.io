@@ -1,5 +1,9 @@
 /* General Page Styling */
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     background-color: black;
     color: #33ff33;
     font-family: 'Courier New', monospace;
@@ -25,6 +29,7 @@ nav ul li a {
 
 /* Page Container */
 #terminal {
+    flex: 1;
     width: 80%;
     margin: auto;
     border: 2px solid #33ff33;
@@ -87,11 +92,13 @@ h1, h2, h3 {
     text-shadow: 0 0 5px #33ff33;
 }
 
-/* Footer */
+/* Footer - Always at the Bottom */
 footer {
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: auto;
     border-top: 1px solid #33ff33;
     color: #33ff33;
+    width: 100%;
+    background-color: black;
 }
