@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writeups</title>
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -29,12 +29,6 @@
                 <ul>
                     <li><a href="portswigger-labs/sql_injection_where_clause.html">SQL injection vulnerability in WHERE clause allowing retrieval of hidden data</a></li>
                     <li><a href="portswigger-labs/sql_injection_login_bypass.html">SQL injection vulnerability allowing login bypass</a></li>
-                    <li><a href="portswigger-labs/sql_injection_union_attack.html">SQL injection UNION attack, determining the number of columns returned by the query</a></li>
-                    <li><a href="portswigger-labs/sql_injection_column_finding.html">SQL injection UNION attack, finding a column containing text</a></li>
-                    <li><a href="portswigger-labs/sql_injection_data_retrieval.html">SQL injection UNION attack, retrieving data from other tables</a></li>
-                    <li><a href="portswigger-labs/sql_injection_multiple_values.html">SQL injection UNION attack, retrieving multiple values in a single column</a></li>
-                    <li><a href="portswigger-labs/sql_injection_oracle.html">SQL injection attack, querying the database type and version on Oracle</a></li>
-                    <li><a href="portswigger-labs/sql_injection_mysql_mssql.html">SQL injection attack, querying the database type and version on MySQL and Microsoft</a></li>wri
                 </ul>
             </div>
         </div>
@@ -44,44 +38,13 @@
             <div id="authentication" class="toc-content">
                 <ul>
                     <li><a href="portswigger-labs/username_enumeration_responses.html">Username enumeration via different responses</a></li>
-                    <li><a href="portswigger-labs/2fa_bypass.html">2FA simple bypass</a></li>
-                    <li><a href="portswigger-labs/password_reset_logic.html">Password reset broken logic</a></li>
-                    <li><a href="portswigger-labs/username_enumeration_timing.html">Username enumeration via response timing</a></li>
-                    <li><a href="portswigger-labs/account_lock_enumeration.html">Username enumeration via account lock</a></li>
-                    <li><a href="portswigger-labs/brute_force_cookie.html">Brute-forcing a stay-logged-in cookie</a></li>
-                    <li><a href="portswigger-labs/offline_password_cracking.html">Offline password cracking</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="toc-section">
-            <button class="toc-btn" onclick="toggleTOC('directorytraversal')">▸ Directory Traversal</button>
-            <div id="directorytraversal" class="toc-content">
-                <ul>
-                    <li><a href="portswigger-labs/file_path_traversal_simple.html">File path traversal, simple case</a></li>
-                    <li><a href="portswigger-labs/absolute_path_bypass.html">File path traversal, traversal sequences blocked with absolute path bypass</a></li>
-                    <li><a href="portswigger-labs/non_recursive_stripping.html">File path traversal, traversal sequences stripped non-recursively</a></li>
-                    <li><a href="portswigger-labs/url_decode_bypass.html">File path traversal, traversal sequences stripped with superfluous URL-decode</a></li>
-                    <li><a href="portswigger-labs/path_validation.html">File path traversal, validation of start of path</a></li>
-                    <li><a href="portswigger-labs/null_byte_bypass.html">File path traversal, validation of file extension with null byte bypass</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="toc-section">
-            <button class="toc-btn" onclick="toggleTOC('oscommand')">▸ OS Command Injection</button>
-            <div id="oscommand" class="toc-content">
-                <ul>
-                    <li><a href="portswigger-labs/os_command_injection_simple.html">OS command injection, simple case</a></li>
-                    <li><a href="portswigger-labs/blind_os_command_injection.html">Blind OS command injection with time delays</a></li>
-                    <li><a href="portswigger-labs/output_redirection.html">Blind OS command injection with output redirection</a></li>
-                    <li><a href="portswigger-labs/out_of_band_interaction.html">Blind OS command injection with out-of-band interaction</a></li>
-                    <li><a href="portswigger-labs/out_of_band_exfiltration.html">Blind OS command injection with out-of-band data exfiltration</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-<!--     <script src="script.js"></script> -->
+    <footer>
+        <p>© 2025 Security Writeups</p>
+    </footer>
 </body>
 </html>
