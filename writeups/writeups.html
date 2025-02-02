@@ -19,6 +19,35 @@
         </ul>
     </nav>
 
+
+    
+    <div id="terminal">
+        <h1 class="green-text">Writeups</h1>
+        <p class="green-text">Explore various security vulnerabilities and writeups categorized by topic. Click each vulnerability type to expand and see detailed writeups.</p>
+
+        <div class="toc-section">
+            <button class="toc-btn" onclick="toggleTOC('sqlinjection')">▸ SQL Injection</button>
+            <div id="sqlinjection" class="toc-content">
+                <ul>
+                    <li><a href="portswigger-labs/sql_injection_where_clause.html">SQL injection vulnerability in WHERE clause allowing retrieval of hidden data</a></li>
+                    <li><a href="portswigger-labs/sql_injection_login_bypass.html">SQL injection vulnerability allowing login bypass</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toc-section">
+            <button class="toc-btn" onclick="toggleTOC('authentication')">▸ Authentication</button>
+            <div id="authentication" class="toc-content">
+                <ul>
+                    <li><a href="portswigger-labs/username_enumeration_responses.html">Username enumeration via different responses</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    
+
     <div id="terminal">
         <h1 class="green-text">Writeups</h1>
         <p class="green-text">Explore various security vulnerabilities and writeups categorized by topic. Click each vulnerability type to expand and see detailed writeups.</p>
