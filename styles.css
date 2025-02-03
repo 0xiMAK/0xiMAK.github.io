@@ -23,10 +23,10 @@ body {
 /* Matrix-style falling code background (covers full screen) */
 .matrix-background {
     position: fixed;
-    top: 0;
+    top: 20;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 80;
+    height: 80;
     z-index: -10; /* Keeps it behind all content */
     overflow: hidden;
     pointer-events: none;
