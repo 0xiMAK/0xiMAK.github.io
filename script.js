@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Matrix Falling Code Effect
+    // Matrix Falling Code Effect (Full Page)
     const matrixContainer = document.createElement("div");
     matrixContainer.classList.add("matrix-background");
     document.body.appendChild(matrixContainer);
@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
         matrixText.classList.add("matrix-text");
         matrixText.innerText = Math.random() > 0.5 ? "0" : "1"; // Random binary characters
         matrixText.style.left = Math.random() * window.innerWidth + "px";
+        matrixText.style.top = "-10px";
         matrixText.style.animationDuration = Math.random() * 3 + 2 + "s"; // Random speed
         matrixContainer.appendChild(matrixText);
 
