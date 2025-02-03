@@ -16,9 +16,9 @@ body {
     font-family: 'Courier New', monospace;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-y: scroll; /* Allow vertical scrolling */
     position: relative;
-    overflow: auto;
+    height: 100vh; /* Set height to 100vh for the page */
 }
 
 /* Matrix-style falling code background (covers full screen) */
@@ -33,6 +33,7 @@ body {
     pointer-events: none;
 }
 
+/* Matrix falling text styling */
 .matrix-text {
     position: absolute;
     font-size: 16px;
