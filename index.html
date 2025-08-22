@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>0xiMAK — Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Mohammed Abdul Kareem (0xiMAK): AppSec, Red Team, Product Security.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoE3vGrY3VhZ7GQ2S5W1X3QGk6b8pSk7+S/g7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Matrix canvas background -->
+  <canvas id="matrix"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Home">
+      <img src="assets/logo.svg" alt="0xiMAK logo" width="36" height="36" />
+      <span>0xiMAK</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <!-- <a href="#projects">Projects</a> -->
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="btn btn-ghost">Contact</a>
+      <a href="https://github.com/0xiMAK" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub Profile">
+        <i class="fa-brands fa-github"></i><span class="hide-sm"> GitHub</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Intro">
+      <div class="hero-content">
+        <h1><span class="hi">Hi, I’m</span> Mohammed Abdul Kareem<span class="aka"> (aka <strong>0xiMAK</strong>)</span></h1>
+        <p class="subtitle">AppSec • Product Security • Red Team</p>
+        <p class="summary">
+          Specialized in AppSec, Red Team, and Cloud Security. Passionate about protecting digital assets and building secure-by-design systems.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#skills">View Projects</a>
+          <a class="btn btn-ghost" href="assets/Resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+        </div>
+        <ul class="quick">
+          <li><i class="fa-solid fa-location-dot"></i> Chicago, USA</li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:mohammedabdulkareem247@gmail.com">0xiMAK@gmail.com</a></li>
+          <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/0ximak" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <img src="assets/profile.jpg" alt="Avatar illustration" />
+        <div class="badges">
+          <span class="badge">OWASP</span>
+          <span class="badge">Burp Suite</span>
+          <span class="badge">Nmap</span>
+          <span class="badge">MobSF</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I specialize in end‑to‑end security testing: black‑box, grey‑box, and authenticated assessments across
+        web, mobile (Android & iOS), APIs, internal/external networks, wireless, and thick‑client apps.
+        I’m comfortable leading engagements, writing crisp reports, and partnering with engineering to remediate.
+      </p>
+      <ul class="highlights">
+        <li>Led security testing for 100+ clients across BFSI, healthcare, telecom, retail, and education.</li>
+        <li>Tools: Burp Suite, Nmap, Metasploit, Wireshark, Nessus, MobSF.</li>
+        <li>Strengths: manual verification, exploit dev, & developer‑friendly fixes.</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section cards">
+      <h2>Technical Arsenal</h2>
+      <p>Comprehensive toolkit across AppSec, Cloud, DevSecOps, and Security Operations.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Application Security</h3>
+          <ul>
+            <li>Threat Modeling, Code Review</li>
+            <li>SAST (Semgrep/SonarQube), SCA (Snyk)</li>
+            <li>DAST (ZAP/Burp), API Security Testing</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Cloud Security</h3>
+          <ul>
+            <li>AWS, Azure, GCP hardening & IAM</li>
+            <li>CSPM / Guardrails, KMS, Secrets</li>
+            <li>Container & K8s Security</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>DevSecOps</h3>
+          <ul>
+            <li>CI/CD Security (GitHub Actions, Azure DevOps)</li>
+            <li>IaC Scanning (Checkov, Terrascan)</li>
+            <li>Image Scanning (Trivy)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Security Operations</h3>
+          <ul>
+            <li>SIEM/XDR (Wazuh, Sentinel, Chronicle)</li>
+            <li>IR, Threat Intel, VM</li>
+            <li>Network Security (Firewalls, VPN)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Testing & VAPT</h3>
+          <ul>
+            <li>Nmap, Nessus/OpenVAS</li>
+            <li>Burp Suite Pro, OWASP ZAP</li>
+            <li>Metasploit, custom scripts</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Mentoring & Community</li>
+            <li>Clear Reporting & Demos</li>
+            <li>Cross‑team Collaboration</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article>
+          <h3>Master’s (Cybersecurity)</h3>
+          <time>2023 — 2025</time>
+          <p>Final semester. Research around secure design for mobile & API‑first systems.</p>
+        </article>
+        <article>
+          <h3>Product Security Engineer — Loyalty Juggernaut</h3>
+          <time>2021 — 2023</time>
+          <p>Led end-to-end security reviews and penetration tests across web, mobile, API, and cloud systems.</p>
+          <p>Integrated automated security tools and performed cloud/container audits to reduce vulnerabilities.</p>
+          <p>Delivered training, PoCs, and reviews, driving continuous security improvement and awareness.</p>
+        </article>
+        <article>
+          <h3>Security Engineer — TrekShield</h3>
+          <time>2017 — 2021</time>
+          <p>Conducted comprehensive security testing across web, mobile, API, and network systems using tools like Burp Suite, Nmap, and Metasploit.</p>
+          <p>Led 100+ client assessments, delivering CVSS-based risk analysis and actionable remediation strategies.</p>
+          <p>Managed analyst teams, guided multi-phase projects, and contributed to 0day disclosures and CTF victories.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact:</h2>
+      <div class="cta">
+        <a class="btn btn-ghost" href="mailto:mohammedabdulkareem247@gmail.com" target="_blank" rel="noopener">E-mail</a>
+        <a class="btn btn-ghost" href="https://github.com/0xiMAK" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://x.com/0xiMAK" target="_blank" rel="noopener"> X </a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/0ximak" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 0xiMAK — Built with HTML/CSS/JS. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
